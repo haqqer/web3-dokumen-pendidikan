@@ -1,0 +1,146 @@
+[
+    {
+        "inputs": [
+            {
+                "internalType": "bytes32",
+                "name": "_identityHash",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "bytes16",
+                "name": "_hashFile",
+                "type": "bytes16"
+            },
+            {
+                "internalType": "string",
+                "name": "_ipfsAddress",
+                "type": "string"
+            }
+        ],
+        "name": "StoreDocument",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+            }
+        ],
+        "name": "TransferOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "_nim",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_nama",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_tglLahir",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_jenis",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_attributes",
+                "type": "string"
+            }
+        ],
+        "name": "HashIdentity",
+        "outputs": [
+            {
+                "internalType": "bytes32",
+                "name": "",
+                "type": "bytes32"
+            }
+        ],
+        "stateMutability": "pure",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "isOwner",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "owner",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "bytes32",
+                "name": "_identityHash",
+                "type": "bytes32"
+            },
+            {
+                "internalType": "bytes16",
+                "name": "_hashFile",
+                "type": "bytes16"
+            }
+        ],
+        "name": "VerifyDocument",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "bytes32",
+                "name": "_identityHash",
+                "type": "bytes32"
+            }
+        ],
+        "name": "VerifyIdentity",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]

@@ -1,0 +1,26 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+datasource db {
+    provider     = "mysql"
+    url          = env("DATABASE_URL")
+    relationMode = "prisma"
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+model Edp {
+    id        String   @id @default(cuid())
+    nim       String
+    nama      String
+    tglLahir  String
+    jenis     String
+    atribut   String   @db.VarChar(255)
+    ipfsCid   String
+    fileHash  String
+    status    Boolean  @default(false)
+    createdAt DateTime @default(now())
+    updatedAt DateTime @updatedAt
+}
